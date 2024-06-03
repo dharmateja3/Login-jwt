@@ -1,0 +1,25 @@
+{
+  "name": "task2",
+  "version": "1.0.0",
+  "description": "task testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm sever",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\" "
+  },
+  "author": "dharma",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.1"
+  }
+}
